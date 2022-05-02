@@ -21,8 +21,9 @@ fileInput.onchange = () => {
   addUploadedFiles(fileInput.files);
   // For demonstration purposes, we will ensure that this event is called even if the user
   // selects the same files.
-  // the fileInput.files fileList is immutable, despite that, it is re-assignable.
-  // We can abuse the DataTransfer API to obtain an empty file list.
+  // The fileInput.files FileList is immutable, despite that, it is re-assignable.
+  // Normally we can't create a fileList,
+  // but we can abuse the DataTransfer API to obtain file lists (in this case an empty one).
   fileInput.files = new DataTransfer().files;
 };
 
