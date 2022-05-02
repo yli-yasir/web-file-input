@@ -1,0 +1,36 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+}
+
+.file-input {
+  display: none;
+}
+
+.pick-file-button {
+  margin-bottom: 32px;
+}
+
+.drop-zone {
+  min-height: 200px;
+  min-width: 500px;
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+li {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+li:hover {
+  user-select: none;
+  cursor: pointer;
+  background-color: rgba(250, 92, 92, 0.4);
+}
